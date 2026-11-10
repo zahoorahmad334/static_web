@@ -1,0 +1,179 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5145cd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #5145cd;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 500px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #e7e6ff, #e5f6ff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #5145cd;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #5145cd;
+    color: white;
+    padding: 14px 28px;
+    margin-top: 25px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background: #362ca5;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.services p {
+    color: #666;
+}
+
+/* Service Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #171b2d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
